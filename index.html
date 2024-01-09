@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="images/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.cdnfonts.com/css/gallient" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <script src="js/script.js" defer></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Realkast</title>
+  </head>
+  <body>
+    <!-- Hero Section -->
+    <section id="hero">
+      <!-- Hero Container -->
+      <div class="container max-w-6xl mx-auto p-8 md:px-6 md:py-12">
+        <nav
+          class="bg-cultured fixed w-full z-20 top-0 start-0 border-b border-darkgrayishred"
+        >
+          <div
+            class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-8"
+          >
+            <a href="#">
+              <img src="images/logo.svg" alt="Logo" />
+            </a>
+            <div class="flex md:order-2 space-x-3 md:space-x-0">
+              <button type="button" class="btn">Get In Touch</button>
+            </div>
+            <div
+              class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+              id="navbar-sticky"
+            >
+              <ul
+                class="flex flex-col p-4 md:p-0 mt-4 font-medium md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0"
+              >
+                <li class="group">
+                  <a
+                    href="#"
+                    class="text-darkgrayishred group-hover:text-orange md:p-0 group-hover:border-b-2 group-hover:border-orange transition-colors duration-300"
+                    >Home</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#"
+                    class="mx-2 text-darkgrayishred group-hover:text-orange md:p-0 group-hover:border-b-2 group-hover:border-orange transition-colors duration-300"
+                    >About</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#"
+                    class="mx-2 text-darkgrayishred group-hover:text-orange md:p-0 group-hover:border-b-2 group-hover:border-orange transition-colors duration-300"
+                    >Services</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#"
+                    class="mx-2 text-darkgrayishred group-hover:text-orange md:p-0 group-hover:border-b-2 group-hover:border-orange transition-colors duration-300"
+                    >Gallery</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#"
+                    class="mx-2 text-darkgrayishred group-hover:text-orange md:p-0 group-hover:border-b-2 group-hover:border-orange transition-colors duration-300"
+                    >Team</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <div class="relative h-screen overflow-hidden">
+        <!-- Video container with orange overlay -->
+        <div class="absolute inset-0">
+          <video class="w-full h-full object-cover" autoplay muted loop>
+            <source
+              src="images/pexels_videos_2512877 (1080p).mp4"
+              type="video/mp4"
+            />
+            Your browser does not support the video tag.
+          </video>
+          <div class="item-gradient"></div>
+        </div>
+
+        <!-- Text content and buttons in the center -->
+        <div
+          class="absolute bottom-20 left-1/2 transform -translate-x-1/2 text-center text-white"
+        >
+          <h1 class="text-3xl md:text-5xl font-semibold">
+            CREATE MORE THAN JUST
+          </h1>
+
+          <h2
+            class="text-8xl md:text-9xl font-gallient text-darkgrayishred mb-4"
+          >
+            memories
+          </h2>
+
+          <p class="text-darkgrayishred text-base mb-8">
+            A captivating journey of timeless stories crafted by reelkast
+            through videos and pictures
+          </p>
+
+          <!-- Two buttons in a flex container -->
+          <div
+            class="items-center flex flex-col md:flex-row space-y-5 md:space-y-0 md:space-x-80"
+          >
+            <button class="btn-1 w-1/2 md:full">Book a Session</button>
+            <button type="button" class="btn-2 w-1/2">
+              Hire Equipment
+              <svg
+                class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 14 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M1 5h12m0 0L9 1m4 4L9 9"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+      <div
+        class="flex flex-col-reverse md:flex-row items-center p-6 py-10 md:py-20 border-b border-darkshade"
+      >
+        <!-- Text content on the left -->
+        <div class="lg:w-1/2 pr-8">
+          <div class="flex items-center mb-2 md:mb-3">
+            <div class="w-6 h-1 bg-black mr-3"></div>
+            <h2 class="text-2xl text-darkgrayishred font-semibold">About Us</h2>
+          </div>
+          <h3
+            class="text-3xl md:text-5xl font-semibold text-darkgrayishred mb-4 md:mb-8"
+          >
+            <span>Want to Know More</span> <br />
+            <span class="text-orange">About</span> Us?
+          </h3>
+
+          <p class="text-base mb-4 text-darkgrayishred">
+            Reel Kast LTD is a versatile film production company focused on
+            videography, photography, documentary production, livestreaming and
+            anything audio-visual content production.
+          </p>
+          <p class="text-base text-darkgrayishred mb-8 md:mb-16">
+            We listen to your ideas and bring together the magic of storytelling
+            to achieve your communication needs.
+          </p>
+
+          <button type="button" class="btn-2">
+            Our Creations
+            <svg
+              class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 14 10"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 5h12m0 0L9 1m4 4L9 9"
+              />
+            </svg>
+          </button>
+        </div>
+
+        <!-- Video on the right -->
+        <div class="md:w-1/2 mb-1.5 md:mb-0">
+          <div class="aspect-w-16 aspect-h-9 overflow-hidden">
+            <video
+              class="w-full h-full object-cover rounded-xl"
+              autoplay
+              muted
+              loop
+            >
+              <source
+                src="images/pexels_videos_2512877 (1080p).mp4"
+                type="video/mp4"
+              />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services">
+      <div
+        class="flex flex-col md:flex-row items-center p-6 py-10 md:py-20 border-b border-darkshade"
+      >
+        <div class="md:w-1/2 mb-1.5 md:mb-0">
+          <img class="w-full h-auto" src="images/about.png" alt="Your Image" />
+        </div>
+
+        <div class="md:w-1/2 md:p-4">
+          <div class="flex items-center mb-2 md:mb-3">
+            <div class="w-6 h-1 bg-black mr-3"></div>
+            <h2 class="text-2xl text-darkgrayishred font-semibold">
+              Our Services
+            </h2>
+          </div>
+          <h3
+            class="text-3xl md:text-5xl font-semibold text-darkgrayishred mb-4 md:mb-8"
+          >
+            <span>What</span>
+            <span class="text-orange">we do?</span>
+          </h3>
+
+          <!-- Snackbar -->
+          <div
+            class="p-3 md:p-4 mb-4 md:mb-6 bg-white rounded-none shadow-md flex items-center justify-between hover:bg-orange transition"
+          >
+            <div>
+              <h3 class="font-semibold text-2xl mb-3 md:mb-4 text-black">
+                Video Recording
+              </h3>
+              <p class="text-base text-darkgrayishred">
+                We specialize in providing wide range of video content.
+              </p>
+            </div>
+
+            <a href="#" class="mb-auto">
+              <img src="images/arrowblack.svg" alt="" />
+            </a>
+          </div>
+
+          <div
+            class="p-3 md:p-4 mb-4 md:mb-6 bg-darkgrayishred text-white rounded-none shadow-md flex items-center justify-between hover:bg-orange transition"
+          >
+            <div>
+              <h3 class="font-semibold text-2xl mb-3 md:mb-4">
+                Filming Services
+              </h3>
+              <p class="text-base">
+                We offer top-notch video content production for various
+                purposes.
+              </p>
+            </div>
+
+            <a href="#" class="mb-auto">
+              <img src="images/arrow.svg" alt="" />
+            </a>
+          </div>
+
+          <div
+            class="p-3 md:p-4 mb-4 md:mb-6 bg-white text-white rounded-none shadow-md flex items-center justify-between hover:bg-orange transition"
+          >
+            <div>
+              <h3 class="font-semibold text-2xl mb-3 md:mb-4 text-black">
+                Photoshoot
+              </h3>
+              <p class="text-base text-darkgrayishred">
+                Our professional photographers capture, edit, print and
+                graphically modify photos.
+              </p>
+            </div>
+
+            <a href="#" class="mb-auto">
+              <img src="images/arrowblack.svg" alt="" />
+            </a>
+          </div>
+
+          <div
+            class="p-3 md:p-4 bg-darkgrayishred text-white rounded-none shadow-md flex items-center justify-between hover:bg-orange transition"
+          >
+            <div>
+              <h3 class="font-semibold text-2xl mb-3 md:mb-4">
+                Drone Coverage
+              </h3>
+              <p class="text-base">
+                We offer aerial view drones for photography and videography.
+              </p>
+            </div>
+
+            <a href="#" class="mb-auto">
+              <img src="images/arrow.svg" alt="" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery">
+      <div
+        class="mx-auto p-6 flex flex-col py-10 md:py-20 border-b border-darkshade"
+      >
+        <!-- Heading Section -->
+        <div class="w-full">
+          <div class="flex items-center mb-2 md:mb-3">
+            <div class="w-6 h-1 bg-black mr-3"></div>
+            <h2 class="text-2xl text-darkgrayishred font-semibold">Gallery</h2>
+          </div>
+          <h2
+            class="text-3xl md:text-5xl font-semibold text-darkgrayishred mb-4 md:mb-8"
+          >
+            <span>Explore our</span>
+            <span class="text-orange">Gallery</span>
+          </h2>
+          <p
+            class="text-darkgrayishred text-base text-left md:text-center mb-2 md:mb-4"
+          >
+            Embark on a visual journey through our gallery, where our passion
+            for capturing captivating moments and expertise in photography come
+            together to create stunning and memorable images.
+          </p>
+        </div>
+
+        <!-- Tab Section -->
+        <div
+          class="md:w-full flex md:flex-col justify-center items-center mb-4"
+        >
+          <ul class="flex space-x-7">
+            <li class="group">
+              <a
+                href="#"
+                class="text-darkgrayishred group-hover:text-orange md:p-0 group-hover:border-b-2 group-hover:border-orange transition-colors duration-300"
+                >All</a
+              >
+            </li>
+
+            <li class="group">
+              <a
+                href="#"
+                class="text-darkgrayishred group-hover:text-orange md:p-0 group-hover:border-b-2 group-hover:border-orange transition-colors duration-300"
+                >Photos</a
+              >
+            </li>
+
+            <li class="group">
+              <a
+                href="#"
+                class="text-darkgrayishred group-hover:text-orange md:p-0 group-hover:border-b-2 group-hover:border-orange transition-colors duration-300"
+                >Videos</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Collage -->
+      </div>
+    </section>
+
+    <!-- Team -->
+    <section id="team">
+      <div class="mx-auto py-10 p-6 flex flex-col md:py-20">
+        <!-- Heading Section -->
+        <div class="w-full">
+          <div class="flex items-center mb-2 md:mb-3">
+            <div class="w-6 h-1 bg-black mr-3"></div>
+            <h2 class="text-2xl text-darkgrayishred font-semibold">Team</h2>
+          </div>
+          <h3
+            class="text-3xl md:text-5xl font-semibold text-darkgrayishred mb-4 md:mb-8"
+          >
+            <span>Our Expertise</span>
+            <span class="text-orange">Team</span>
+          </h3>
+        </div>
+
+        <!-- Pictures -->
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="CTA">
+      <div class="mx-auto p-6 py-10 flex flex-col items-center md:py-20">
+        <h3
+          class="text-center text-3xl md:text-5xl font-semibold text-orange mb-3 md:mb-6"
+        >
+          Partner with Reelkast
+        </h3>
+        <p class="text-white text-base text-left md:text-center mb-2 md:mb-12">
+          At Reelkast, we are proud to collaborate with industry-leading
+          partners who share our passion for capturing moments and creating
+          visual stories. These partnerships reflect our commitment to
+          excellence and our relentless pursuit of providing you with an
+          unparalleled photography experience. We believe that collaboration is
+          the key to unlocking creativity, and with our trusted partners, we
+          look forward to capturing and preserving your special moments in the
+          most extraordinary way.
+        </p>
+        <button type="button" class="btn">Partner with us</button>
+      </div>
+    </section>
+
+    <!-- Partners -->
+    <div id="partners">
+      <div class="mx-auto py-10 p-6 flex flex-col items-center md:py-20">
+        <h2 class="text-2xl text-darkgrayishred text-center font-semibold mb-2">
+          Partners we have worked with
+        </h2>
+
+        <!-- Carousel -->
+      </div>
+    </div>
+
+    <!-- Footer -->
+
+    <footer id="footer">
+      <div class="bg-darkshade py-10 p-6 md:py-20">
+        <div
+          class="flex flex-col mb-2 md:mb-6 md:flex-row items-start md:items-center md:justify-between"
+        >
+          <div class="text-white flex items-baseline md:flex-col">
+            <p class="mb-2 mr-2 md:mr-0 md:mb-3 text-2xl font-semibold">
+              Subscribe
+            </p>
+            <p class="mb-2 text-xs text-orange md:text-white md:text-base">
+              Get updates on discounts and offers
+            </p>
+          </div>
+          <div class="flex lex-col md:flex-row items-center md:justify-between">
+            <input
+              class="mr-2 md:mr-3.5 border border-white text-sm w-full font-medium leading-none text-darkgrayishred px-5 py-2.5 bg-white placeholder-darkgrayishred"
+              placeholder="Enter your email address"
+            />
+            <button class="btn">Subscribe</button>
+          </div>
+        </div>
+        <div
+          class="flex flex-col md:flex-row items-start md:items-center md:justify-between"
+        >
+          <a href="#" class="hidden md:flex md:items-center md:mb-4 mb-2">
+            <img src="images/logo.svg" class="" alt="Flowbite Logo" />
+          </a>
+          <ul
+            class="flex flex-wrap items-center md:mb-6 text-sm font-medium text-gray-500 mb-4 dark:text-gray-400"
+          >
+            <li>
+              <a href="#" class="hover:underline me-7">Home</a>
+            </li>
+            <li>
+              <a href="#" class="hover:underline me-7">About</a>
+            </li>
+            <li>
+              <a href="#" class="hover:underline me-7">Services</a>
+            </li>
+            <li>
+              <a href="#" class="hover:underline me-7">Gallery</a>
+            </li>
+            <li>
+              <a href="#" class="hover:underline">Team</a>
+            </li>
+          </ul>
+          <div class="flex items-center space-x-8 md:space-x-6">
+            <a href="#" class="flex items-center md:mb-4 mb-0">
+              <img src="images/facebook.svg" class="" alt="" />
+            </a>
+            <a href="#" class="flex items-center md:mb-4 mb-0">
+              <img src="images/twitter.svg" class="" alt="" />
+            </a>
+            <a href="#" class="flex items-center md:mb-4 mb-0">
+              <img src="images/gmail.svg" class="" alt="" />
+            </a>
+          </div>
+        </div>
+        <hr class="my-6 sm:mx-auto border-gray-700 lg:my-8" />
+
+        <div
+          class="flex items-start md:items-center flex-col md:flex-row md:justify-between"
+        >
+          <div class="flex items-center mb-2 md:mb-0">
+            <img src="images/Call.svg" class="mr-4" alt="" />
+            <h2 class="text-base text-white font-medium">+254 700 000 000</h2>
+          </div>
+          <div class="flex items-center mb-2 md:mb-0">
+            <img src="images/Message.svg" class="mr-4" alt="" />
+            <h2 class="text-base text-white font-medium">
+              reelkastproductionlimited@gmail.com
+            </h2>
+          </div>
+          <div class="flex items-center mb-2 md:mb-0">
+            <img src="images/location.svg" class="mr-4" alt="" />
+            <h2 class="text-base text-white font-medium">Nairobi</h2>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

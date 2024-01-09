@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn {
+    @apply text-white bg-orange hover:bg-americanorange rounded-md text-base px-5 py-2.5 transition duration-700;
+  }
+
+  .btn-1 {
+    @apply text-white bg-darkgrayishred  px-5 py-2.5 rounded-md text-base transition duration-700 hover:bg-darkshade;
+  }
+
+  .btn-2 {
+    @apply text-darkgrayishred bg-transparent border border-darkgrayishred px-5 py-2.5 text-center inline-flex items-center rounded-md text-base hover:bg-darkshade hover:text-white hover:border-darkshade transition duration-700;
+  }
+}
+
+.item-gradient {
+  @apply absolute top-0 bottom-0 right-0 left-0 bg-gradient-to-b from-transparent to-orange opacity-100;
+}
+
+#CTA {
+  background-image: url("../images/CTASection.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: 576px) {
+  #CTA {
+    background-image: url("../images/CTASection.png");
+    background-position: center;
+  }
+}
+
+#image-carousel {
+  height: 400px; /* Adjust the height as needed */
+}
+
+#carousel-inner {
+  display: flex;
+  transform: translateX(0);
+}
