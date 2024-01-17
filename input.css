@@ -4,15 +4,15 @@
 
 @layer components {
   .btn {
-    @apply text-white bg-orange hover:bg-americanorange rounded-md text-base px-5 py-2.5 transition duration-700;
+    @apply text-white bg-orange hover:bg-americanorange rounded-md text-base px-5 py-2.5 transition duration-300;
   }
 
   .btn-1 {
-    @apply text-white bg-darkgrayishred  px-5 py-2.5 rounded-md text-base transition duration-700 hover:bg-darkshade;
+    @apply text-white bg-darkgrayishred  px-5 py-2.5 rounded-md text-base transition duration-300 hover:bg-darkshade;
   }
 
   .btn-2 {
-    @apply text-darkgrayishred bg-transparent border border-darkgrayishred px-5 py-2.5 text-center inline-flex items-center rounded-md text-base hover:bg-darkshade hover:text-white hover:border-darkshade transition duration-700;
+    @apply text-darkgrayishred bg-transparent border border-darkgrayishred px-5 py-2.5 text-center inline-flex items-center rounded-md text-base hover:bg-darkshade hover:text-white hover:border-darkshade transition duration-300;
   }
 }
 
