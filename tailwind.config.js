@@ -21,6 +21,9 @@ module.exports = {
         sans: ["Manrope", "sans-serif"],
         gallient: ["Gallient"],
       },
+      lineHeight: {
+        16: "4rem",
+      },
     },
   },
   plugins: [],

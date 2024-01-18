@@ -665,10 +665,6 @@ video {
   top: 0.5rem;
 }
 
-.left-2 {
-  left: 0.5rem;
-}
-
 .z-20 {
   z-index: 20;
 }
@@ -754,20 +750,16 @@ video {
           margin-inline-start: 0.5rem;
 }
 
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
 .mt-4 {
   margin-top: 1rem;
 }
 
-.mt-5 {
-  margin-top: 1.25rem;
-}
-
 .mt-6 {
   margin-top: 1.5rem;
-}
-
-.mt-10 {
-  margin-top: 2.5rem;
 }
 
 .flex {
@@ -806,10 +798,6 @@ video {
   height: 100vh;
 }
 
-.h-1\/2 {
-  height: 50%;
-}
-
 .w-12 {
   width: 3rem;
 }
@@ -828,10 +816,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-1\/2 {
-  width: 50%;
 }
 
 .max-w-6xl {
@@ -921,24 +905,6 @@ video {
   --tw-space-y-reverse: 0;
   margin-top: calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
-}
-
-.space-x-40 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(10rem * var(--tw-space-x-reverse));
-  margin-left: calc(10rem * calc(1 - var(--tw-space-x-reverse)));
-}
-
-.space-x-36 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(9rem * var(--tw-space-x-reverse));
-  margin-left: calc(9rem * calc(1 - var(--tw-space-x-reverse)));
-}
-
-.space-x-10 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(2.5rem * var(--tw-space-x-reverse));
-  margin-left: calc(2.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .overflow-hidden {
@@ -1230,12 +1196,12 @@ video {
   background-size: cover;
 }
 
-@media (max-width: 576px) {
+/* @media (max-width: 576px) {
   #CTA {
     background-image: url("../images/CTASection.png");
     background-position: center;
   }
-}
+} */
 
 #collage {
   display: grid;
@@ -1351,6 +1317,12 @@ video {
     grid-row: 11 / 16;
     grid-column: 1 / 3;
   }
+}
+
+#creation {
+  background-image: url("../images/creations.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .hover\:scale-125:hover {
@@ -1571,6 +1543,14 @@ video {
   .md\:text-base {
     font-size: 1rem;
     line-height: 1.5rem;
+  }
+
+  .md\:leading-16 {
+    line-height: 4rem;
+  }
+
+  .md\:leading-8 {
+    line-height: 2rem;
   }
 
   .md\:text-white {
